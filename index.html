@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="./css/main.css">
+  <script defer src="./js/main.js"></script>
   </head>
 <body>
   <div class="structure">
@@ -20,21 +21,15 @@
       <div class="My-To-Do">
         <div class="My-To-Do-App">My To-Do App</div>
       </div>
-      <div class="input">
-        <input type="text"/>
-        <div class="New-Entry">
+      <div id="input">
+        <input type="text" placeholder="Type content" />
+        <button class="New-Entry">
           <span>New Entry</span>
-        </div>
+        </button>
       </div>
-      <div class="To-Do-List">
-        <div class="list1">
-          <span class="list1__name"></span>
-          <div class="x-btn">
-            <div class="material-icons">close</div>
-          </div>
-        </div>
+      <ul class="List">
         
-      </div>
+      </ul>
     </div>
   </div>
 </body>

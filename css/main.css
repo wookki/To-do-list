@@ -10,7 +10,6 @@
 /*STRUCTURE*/
 .structure {
   width: 700px;
-  height: 500px;
   box-shadow: 5px 5px 5px #dcdcdc;
   display: flex;
   justify-content: center;
@@ -20,28 +19,28 @@
   width: 500px;
   height: 60px;
   border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 30px;
 }
 .structure .My-To-Do .My-To-Do-App {
   font-size: 50px;
   font-weight: 600;
   margin-top: 30px;
 }
-.input {
-  position: absolute;
-  top: 120px;
+#input {
   height: 70px;
   display: flex;
-  border-bottom: 1px solid #dcdcdc;  
+  border-bottom: 1px solid #dcdcdc; 
+  margin-bottom: 10px;
 }
-.input input {
+#input input {
   width: 400px;
-  height: 39px;
+  height: 40px;
   border-radius: 5px;
   border: 1px solid #dcdcdc;
   outline: none;
   box-sizing: border-box;
 }
-.input .New-Entry {
+#input .New-Entry {
   width: 100px;
   height: 40px;
   display: flex;
@@ -49,26 +48,23 @@
   align-items: center;
   background-color: #20B2AA;
   border-radius: 5px;
+  border: 1px solid #20B2AA;
 }
-.input .New-Entry span {
+#input .New-Entry span {
   color: white;
 }
-.To-Do-List {
-  position: absolute;
-  top: 220px;
-  width: 500px;
-  height: 240px;
-  background-color: #FFDEAD;
-  border-radius: 10px;
+.List {
   overflow: hidden;
 }
-.To-Do-List .list1 {
-  height: 80px;
-  background-color: #20B2AA;
+.List .item-li {
+  font-size: 22px;
+  margin-top: 10px;
+  position: relative;
 }
-.To-Do-List .list2 {
-  height: 80px;
+.List .material-icons {
+  position: absolute;
+  right: 5px;
 }
-.To-Do-List .list3ß {
-  height: 80px;
+.List .material-icons:hover {
+  cursor: pointer;
 }
