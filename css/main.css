@@ -37,6 +37,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  outline: none;
 }
 #input input {
   width: 400px;
@@ -55,23 +56,46 @@
   background-color: #20B2AA;
   border-radius: 5px;
   border: 1px solid #20B2AA;
+  cursor: pointer;
 }
 #input .New-Entry span {
   color: white;
 }
-.List {
-  overflow: hidden;
-}
-.List .item-li {
+.item-li {
   font-size: 22px;
   margin-top: 10px;
   position: relative;
   padding-bottom: 20px;
 }
-.List .material-icons {
+.material-icons {
   position: absolute;
   right: 5px;
 }
-.List .material-icons:hover {
+.material-icons:hover {
   cursor: pointer;
 }
+.structure .btn-group {
+  margin-bottom: 10px;
+}
+.structure .btn-group button {
+  background-color: white;
+  border: 1px solid #333;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: 1s;
+  border-radius: 3px;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+.structure .btn-group button:hover {
+  background-color: #333;
+  color: white;
+}
+.structure .btn-group button:last-child {
+  margin-right: 0;
+}
+.structure .list {
+  display: none;;
+}
+
+
