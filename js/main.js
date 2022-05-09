@@ -52,6 +52,7 @@ function addItemCoding(str, dolistContents) {
   li.append(cancleBtn);
 
   list.append(li);
+
 }
 
 function onHandleRemoveButton(li) {
@@ -160,27 +161,38 @@ const listCoding = document.querySelector('.list-coding');
 const listEletric = document.querySelector('.list-eletric');
 const listWork = document.querySelector('.list-work-out');
 const listDate = document.querySelector('.list-date');
+
+const elementArray = [listCoding, listEletric, listWork, listDate];
+
+function showSection(target) {
+  for (var elem  of elementArray) {
+    elem.style.display = 'none';
+  }
+  target.style.display = 'block';
+}
+
 coding.addEventListener('click', function () {
-  listCoding.style.display = 'block';
-  listEletric.style.display = 'none';
-  listWork.style.display = 'none';
-  listDate.style.display = 'none';
+  showSection(listCoding);
 })
 eletric.addEventListener('click', function () {
-  listCoding.style.display = 'none';
-  listEletric.style.display = 'block';
-  listWork.style.display = 'none';
-  listDate.style.display = 'none';
+  showSection(listEletric);
 })
 work.addEventListener('click', function () {
-  listCoding.style.display = 'none';
-  listEletric.style.display = 'none';
-  listWork.style.display = 'block';
-  listDate.style.display = 'none';
+  showSection(listWork);
 })
 date.addEventListener('click', function () {
-  listCoding.style.display = 'none';
-  listEletric.style.display = 'none';
-  listWork.style.display = 'none';
-  listDate.style.display = 'block';
+  showSection(listDate);
+})
+
+const plus = document.querySelector('.btn-group .btnPlus');
+plus.addEventListener('click', function() {
+  let category = prompt('추가해주세요', '');
+  const selectBox = document.querySelector('#selectBox');
+  let option = document.createElement('option');
+  option.innerHTML = category;
+  selectBox.append(option)
+  const btn = document.querySelector('.btnPlus');
+  let btnPlus = document.createElement('button');
+  btnPlus.innerHTML = category;
+  btn.before(btnPlus)
 })

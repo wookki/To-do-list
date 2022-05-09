@@ -67,15 +67,13 @@
   position: relative;
   padding-bottom: 20px;
 }
-.material-icons {
-  position: absolute;
-  right: 5px;
-}
 .material-icons:hover {
   cursor: pointer;
 }
 .structure .btn-group {
   margin-bottom: 10px;
+  display: flex;
+  
 }
 .structure .btn-group button {
   background-color: white;
@@ -95,7 +93,31 @@
   margin-right: 0;
 }
 .structure .list {
-  display: none;;
+  display: none;
+  border-radius: 5px;
 }
-
-
+.structure .item-li { 
+  border-radius: 5px;
+  position: relative;
+  height: 24px;
+}
+.structure .list .item-li:nth-child(odd) {
+  background-color: skyblue;
+}
+.structure .list .item-li:nth-child(even) {
+  background-color: gainsboro;
+}
+.structure .item-li .item-title {
+  position: absolute;
+  height: 12px;
+  display: block;
+  left: 5px;
+  top: 50%;
+  margin-top: -12px;
+}
+.structure .item-li > .material-icons {
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+  right: 5px;
+} 
